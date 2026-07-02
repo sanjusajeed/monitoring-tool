@@ -1,0 +1,39 @@
+# Dependencies / vendored tools
+node_modules/
+backend/aws/
+backend/awscliv2.zip
+
+# Build output
+react-frontend/dist/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Env / local secrets
+.env
+.env.*
+
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/*.tfvars.local
+terraform/build/
+
+# Logs
+*.log
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+
+# Claude Code local-only settings
+.claude/settings.local.json
+Lambda/.claude/settings.local.json
+
+# Kubernetes secrets — template only in git; real values applied out-of-band
+k8s/secret.yaml

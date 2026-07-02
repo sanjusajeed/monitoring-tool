@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390">
+  <rect width="1200" height="390" fill="#fff"/>
+  <rect x="14" y="10" width="170" height="34" rx="9" fill="#111827"/>
+  <rect x="14" y="10" width="36" height="34" rx="9" fill="#a3e635"/>
+  <text x="64" y="32" font-family="Arial" font-size="14" font-weight="700" fill="#fff">Investigate Again</text>
+  <rect x="14" y="50" width="300" height="150" fill="#374151"/>
+  <text x="34" y="78" font-family="Arial" font-size="12" font-weight="700" fill="#9ca3af">DETAILED</text>
+  <text x="34" y="95" font-family="Arial" font-size="12" font-weight="700" fill="#9ca3af">ANALYSIS</text>
+  <rect x="316" y="50" width="870" height="150" fill="#f8fafc"/>
+  <rect x="342" y="72" width="810" height="58" fill="#fff1f2"/>
+  <text x="356" y="98" font-family="Courier New" font-size="13" fill="#991b1b">Error while evaluating expression ${loanNumber} Type ai.jiffy.cel.impl.tree.NonExistingLiteral...</text>
+  <text x="342" y="154" font-family="Arial" font-size="12" font-weight="700" fill="#9ca3af">FAILED STEP</text>
+  <text x="342" y="174" font-family="Arial" font-size="16" font-weight="700" fill="#020617">post_documents</text>
+  <text x="470" y="154" font-family="Arial" font-size="12" font-weight="700" fill="#9ca3af">SOURCE</text>
+  <text x="470" y="174" font-family="Arial" font-size="16" font-weight="700" fill="#020617">JavaSDK</text>
+  <rect x="14" y="204" width="1172" height="92" fill="#fca5a5"/>
+  <text x="38" y="232" font-family="Arial" font-size="12" font-weight="700" fill="#7f1d1d">RCA — ROOT CAUSE ANALYSIS</text>
+  <text x="38" y="262" font-family="Arial" font-size="16" fill="#450a0a">The Temporal workflow step z396791638954 failed due to an undefined variable ${loanNumber} in a CEL expression,</text>
+  <text x="38" y="286" font-family="Arial" font-size="16" fill="#450a0a">causing a NonExistingLiteral error during the post_documents step execution.</text>
+  <rect x="14" y="300" width="1172" height="86" fill="#d1fae5"/>
+  <text x="38" y="328" font-family="Arial" font-size="12" font-weight="700" fill="#065f46">SUGGESTED FIX</text>
+  <text x="38" y="354" font-family="Arial" font-size="14" fill="#065f46">1. Check the workflow input parameters and ensure the loanNumber variable is passed to the workflow.</text>
+  <text x="38" y="376" font-family="Arial" font-size="14" fill="#065f46">2. Verify the workflow DSL variable binding before the post_documents step.</text>
+</svg>

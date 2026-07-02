@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620">
+  <rect width="760" height="620" fill="#fff"/>
+  <text x="20" y="24" font-family="Arial" font-size="12" font-weight="700" fill="#64748b">CRITICAL INCIDENT · CWUK-SP</text>
+  <text x="20" y="48" font-family="Arial" font-size="22" font-weight="700" fill="#020617">Supplierportal <tspan fill="#6b7280">(prod)</tspan></text>
+  <rect x="610" y="16" width="120" height="28" rx="14" fill="#d1fae5" stroke="#86efac"/><text x="626" y="35" font-family="Arial" font-size="14" font-weight="700" fill="#047857">Confidence 95%</text>
+  <line x1="0" y1="72" x2="760" y2="72" stroke="#e5e7eb"/>
+  <text x="36" y="104" font-family="Arial" font-size="15" font-weight="700" fill="#10b981">Summary</text><text x="128" y="104" font-family="Arial" font-size="15" font-weight="700" fill="#64748b">Evidence</text><line x1="20" y1="120" x2="110" y2="120" stroke="#10b981" stroke-width="2"/>
+  <text x="20" y="154" font-family="Arial" font-size="13" font-weight="700" fill="#6b7280">ERROR SUMMARY</text>
+  <text x="20" y="184" font-family="Arial" font-size="16" fill="#1f2937">Supplierportal production app experiencing 100% error rate with 135 total requests failing,</text>
+  <text x="20" y="208" font-family="Arial" font-size="16" fill="#1f2937">all returning 404 route_not_found errors.</text>
+  <text x="20" y="250" font-family="Arial" font-size="13" font-weight="700" fill="#6b7280">ROOT CAUSE</text>
+  <text x="20" y="278" font-family="Arial" font-size="16" fill="#1f2937">Between 2026-05-06T16:00 and 16:15, routing failed with 100% of requests returning</text>
+  <text x="20" y="302" font-family="Arial" font-size="16" fill="#1f2937">404 route_not_found. Requests are rejected at the ingress/routing layer before reaching pods.</text>
+  <text x="20" y="344" font-family="Arial" font-size="13" font-weight="700" fill="#6b7280">EVIDENCE</text>
+  <text x="38" y="374" font-family="Arial" font-size="15" fill="#374151">• 100% error rate across 135 requests</text>
+  <text x="38" y="402" font-family="Arial" font-size="15" fill="#374151">• All errors are 404 route_not_found with 0ms duration</text>
+  <text x="38" y="430" font-family="Arial" font-size="15" fill="#374151">• No 5xx errors, suggesting backend may be healthy but unreachable</text>
+  <text x="20" y="474" font-family="Arial" font-size="13" font-weight="700" fill="#6b7280">WHAT TO CHECK</text>
+  <text x="38" y="502" font-family="Arial" font-size="15" fill="#374151">1. Verify istio-ingress routing configuration</text>
+  <text x="38" y="530" font-family="Arial" font-size="15" fill="#374151">2. Check pod restarts during the incident window</text>
+  <rect x="20" y="552" width="700" height="54" rx="8" fill="#ecfdf5" stroke="#86efac"/>
+  <text x="36" y="584" font-family="Arial" font-size="15" fill="#1f2937">Suggested fix: restore VirtualService routing rules and reload ingress pods if needed.</text>
+</svg>

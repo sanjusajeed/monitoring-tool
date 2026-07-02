@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pymongo
+mongomock
+pyyaml
+httpx
+opensearch-py
+anthropic
+temporalio
+apscheduler
+python-multipart

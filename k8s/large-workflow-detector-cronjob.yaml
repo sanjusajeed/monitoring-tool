@@ -1,0 +1,69 @@
+---
+# Periodic scan for Temporal workflows whose history exceeded the size
+# threshold. Runs as a sibling to the apm-tenant-monitor Deployment using
+# the SAME backend image — only the entrypoint differs (it invokes the
+# detector module instead of uvicorn).
+#
+# Schedule fires every 5 minutes. The detector script reads the
+# user-configured interval from `monitoring_settings` and no-ops when the
+# interval hasn't elapsed since the last run, so changing the cadence
+# from the Settings page takes effect within one cron tick (≤ 5 min)
+# without touching this YAML.
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: large-workflow-detector
+  namespace: apm
+  labels:
+    app: large-workflow-detector
+spec:
+  schedule: "*/5 * * * *"
+  concurrencyPolicy: Forbid         # never overlap runs
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 3
+  startingDeadlineSeconds: 120
+  jobTemplate:
+    spec:
+      backoffLimit: 1
+      ttlSecondsAfterFinished: 600
+      template:
+        metadata:
+          labels:
+            app: large-workflow-detector
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: detector
+              image: 975669747972.dkr.ecr.us-east-1.amazonaws.com/tenant-monitor-v1.0.4
+              imagePullPolicy: Always
+              command: ["python", "-m", "jobs.large_workflow_detector"]
+              workingDir: /app/backend
+              env:
+                - name: BACKEND_CONFIG_PATH
+                  value: /etc/monitoring/config.yml
+                - name: TEMPORAL_FRONTEND_ADDRESS
+                  value: temporal-frontend.temporal.svc.cluster.local:7233
+                - name: TEMPORAL_NAMESPACE
+                  value: JIFFY_LIVE
+                # Python flushes line-buffered when the FD is a tty; in K8s
+                # stdout is a pipe, so we set this to keep logs streaming.
+                - name: PYTHONUNBUFFERED
+                  value: "1"
+              volumeMounts:
+                - name: config
+                  mountPath: /etc/monitoring
+                  readOnly: true
+              resources:
+                requests:
+                  cpu: 100m
+                  memory: 256Mi
+                limits:
+                  cpu: 500m
+                  memory: 512Mi
+          volumes:
+            - name: config
+              secret:
+                secretName: apm-tenant-monitor-config
+                items:
+                  - key: config.yml
+                    path: config.yml

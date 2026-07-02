@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: tenant-monitoring
+  namespace: apm
+spec:
+  hosts:
+    - "*"
+  gateways:
+    - apm/apm-gateway
+  http:
+    - match:
+        - uri:
+            prefix: /api/temporal
+      route:
+        - destination:
+            host: apm-tenant-monitor.apm.svc.cluster.local
+            port:
+              number: 80

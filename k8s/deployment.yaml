@@ -1,0 +1,81 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apm-tenant-monitor
+  namespace: apm
+  labels:
+    app: apm-tenant-monitor
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: apm-tenant-monitor
+  template:
+    metadata:
+      labels:
+        app: apm-tenant-monitor
+    spec:
+      containers:
+        - name: backend
+          # Replace with the ECR URI printed by `terraform output backend_image`.
+          image: 975669747972.dkr.ecr.us-east-1.amazonaws.com/tenant-monitor-v1.0.4
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 8000
+          env:
+            - name: BACKEND_CONFIG_PATH
+              value: /etc/monitoring/config.yml
+            # In-cluster Temporal frontend. Override if the service lives elsewhere.
+            - name: TEMPORAL_FRONTEND_ADDRESS
+              value: temporal-frontend.temporal.svc.cluster.local:7233
+            - name: TEMPORAL_NAMESPACE
+              value: JIFFY_LIVE
+          readinessProbe:
+            httpGet:
+              path: /api/status
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /api/status
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 30
+          resources:
+            requests:
+              cpu: 200m
+              memory: 512Mi
+            limits:
+              cpu: 1000m
+              memory: 1Gi
+          volumeMounts:
+            - name: config
+              mountPath: /etc/monitoring
+              readOnly: true
+      volumes:
+        - name: config
+          secret:
+            secretName: apm-tenant-monitor-config
+            items:
+              - key: config.yml
+                path: config.yml
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: apm-tenant-monitor
+  namespace: apm
+  labels:
+    app: apm-tenant-monitor
+spec:
+  type: ClusterIP
+  selector:
+    app: apm-tenant-monitor
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
+      protocol: TCP

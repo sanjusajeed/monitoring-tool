@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <rect width="1200" height="560" fill="#fff"/>
+  <rect x="16" y="16" width="360" height="130" fill="#374151"/>
+  <text x="36" y="48" font-family="Arial" font-size="12" font-weight="700" fill="#9ca3af">STATUS</text>
+  <text x="36" y="86" font-family="Georgia" font-size="32" font-weight="700" fill="#f87171">Failed</text>
+  <text x="36" y="112" font-family="Arial" font-size="13" fill="#9ca3af">Jiffy_435826067</text>
+  <text x="36" y="133" font-family="Arial" font-size="13" fill="#9ca3af">5/6/2026, 9:39:21 AM</text>
+  <rect x="378" y="16" width="806" height="130" fill="#f8fafc"/>
+  <text x="404" y="48" font-family="Arial" font-size="12" font-weight="700" fill="#9ca3af">SUMMARY</text>
+  <text x="404" y="78" font-family="Arial" font-size="18" font-weight="700" fill="#020617">Get documents from primary owner taxid</text>
+  <text x="404" y="106" font-family="Arial" font-size="14" fill="#334155">io.jiffy.flow.exception.WorkflowException: Error while evaluating expression ${loanNumber}</text>
+  <text x="404" y="128" font-family="Arial" font-size="14" fill="#334155">Type ai.jiffy.cel.impl.tree.NonExistingLiteral@3708257d is unsupported step name: z396791638954</text>
+  <circle cx="1170" cy="28" r="17" fill="#fff" stroke="#cbd5e1"/><text x="1163" y="35" font-family="Arial" font-size="22" fill="#64748b">×</text>
+  <rect x="16" y="150" width="1168" height="365" fill="#fca5a5"/>
+  <text x="40" y="182" font-family="Arial" font-size="12" font-weight="700" letter-spacing="1" fill="#7f1d1d">COMPLETE ERROR</text>
+  <text x="40" y="210" font-family="Courier New" font-size="13" fill="#7f1d1d">Workflow execution failure WorkflowId='Jiffy_435826067', RunId=c140386d-6f8f-451e-9d37-34e903b55917</text>
+  <text x="40" y="236" font-family="Arial" font-size="12" font-weight="700" fill="#7f1d1d">▾ STACK TRACE</text>
+  <rect x="40" y="252" width="1120" height="245" rx="6" fill="#fff1f2"/>
+  <text x="56" y="280" font-family="Courier New" font-size="12" fill="#7f1d1d">io.jiffy.flow.exception.WorkflowException: Error while evaluating expression ${loanNumber}</text>
+  <text x="86" y="304" font-family="Courier New" font-size="12" fill="#7f1d1d">at io.jiffy.flow.runtime.JiffyWorkflowImpl.execute(JiffyWorkflowImpl.java:166)</text>
+  <text x="86" y="328" font-family="Courier New" font-size="12" fill="#7f1d1d">at jdk.internal.reflect.GeneratedMethodAccessor222.invoke(Unknown Source)</text>
+  <text x="86" y="352" font-family="Courier New" font-size="12" fill="#7f1d1d">at java.base/java.lang.reflect.Method.invoke(Method.java:569)</text>
+  <text x="86" y="376" font-family="Courier New" font-size="12" fill="#7f1d1d">at io.temporal.internal.sync.POJOWorkflowImplementationFactory.execute(...)</text>
+  <text x="86" y="400" font-family="Courier New" font-size="12" fill="#7f1d1d">at io.temporal.internal.sync.WorkflowThreadImpl.run(...)</text>
+  <rect x="16" y="524" width="180" height="34" rx="9" fill="#111827"/>
+  <rect x="16" y="524" width="36" height="34" rx="9" fill="#a3e635"/>
+  <text x="66" y="546" font-family="Arial" font-size="14" font-weight="700" fill="#fff">Investigate Further</text>
+</svg>

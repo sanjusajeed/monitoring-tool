@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230">
+  <rect width="1200" height="230" fill="#fff"/>
+  <rect x="10" y="20" width="70" height="38" rx="10" fill="#f8fafc"/>
+  <text x="27" y="44" font-family="Arial" font-size="14" fill="#111827">← Apps</text>
+  <rect x="95" y="15" width="42" height="42" rx="11" fill="#3b82f6"/>
+  <text x="107" y="42" font-family="Arial" font-size="16" font-weight="700" fill="#fff">BP</text>
+  <text x="155" y="32" font-family="Arial" font-size="20" font-weight="700" fill="#0f172a">Application Insights</text>
+  <text x="155" y="54" font-family="Arial" font-size="14" fill="#64748b">alerus · Banker Portal</text>
+  <line x1="0" y1="78" x2="1200" y2="78" stroke="#e5e7eb"/>
+  <text x="24" y="108" font-family="Arial" font-size="15" font-weight="700" fill="#64748b">Overview</text>
+  <text x="120" y="108" font-family="Arial" font-size="15" font-weight="700" fill="#10b981">Workflow Analysis</text>
+  <line x1="104" y1="122" x2="255" y2="122" stroke="#10b981" stroke-width="2"/>
+  <rect x="0" y="140" width="285" height="72" rx="12" fill="#fff" stroke="#e5e7eb"/>
+  <text x="48" y="170" font-family="Arial" font-size="14" font-weight="700" fill="#64748b">Total Workflows</text>
+  <text x="14" y="202" font-family="Arial" font-size="28" font-weight="700" fill="#020617">124</text>
+  <circle cx="255" cy="190" r="18" fill="#eff6ff"/><circle cx="255" cy="190" r="5" fill="#3b82f6"/>
+  <rect x="300" y="140" width="285" height="72" rx="12" fill="#fff" stroke="#e5e7eb"/>
+  <text x="348" y="170" font-family="Arial" font-size="14" font-weight="700" fill="#64748b">Failed</text>
+  <text x="314" y="202" font-family="Arial" font-size="28" font-weight="700" fill="#020617">195</text>
+  <circle cx="555" cy="190" r="18" fill="#fee2e2"/><circle cx="555" cy="190" r="5" fill="#ef4444"/>
+  <rect x="600" y="140" width="285" height="72" rx="12" fill="#fff" stroke="#e5e7eb"/>
+  <text x="648" y="170" font-family="Arial" font-size="14" font-weight="700" fill="#64748b">Success</text>
+  <text x="614" y="202" font-family="Arial" font-size="28" font-weight="700" fill="#020617">0</text>
+  <circle cx="855" cy="190" r="18" fill="#dcfce7"/><circle cx="855" cy="190" r="5" fill="#22c55e"/>
+  <rect x="900" y="140" width="285" height="72" rx="12" fill="#fff" stroke="#e5e7eb"/>
+  <text x="948" y="170" font-family="Arial" font-size="14" font-weight="700" fill="#64748b">5xx Errors</text>
+  <text x="914" y="202" font-family="Arial" font-size="28" font-weight="700" fill="#020617">13</text>
+  <circle cx="1155" cy="190" r="18" fill="#ffedd5"/><circle cx="1155" cy="190" r="5" fill="#f97316"/>
+</svg>

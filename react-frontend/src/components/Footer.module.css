@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 14px 22px;
+  font-size: 13px;
+  color: #64748b;
+  margin-top: auto;
+}
+
+.live  { color: #10b981; }
+.error { color: #f59e0b; }
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,14 @@
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.venv
+venv
+.env
+.env.*
+# config.yml contains live secrets and is supplied via k8s Secret at runtime.
+config.yml
+handler.py
+check_db_size.py
+trim_wf.py
+*.md

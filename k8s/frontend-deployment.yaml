@@ -1,0 +1,62 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: monitoring-frontend
+  namespace: apm
+  labels:
+    app: monitoring-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: monitoring-frontend
+  template:
+    metadata:
+      labels:
+        app: monitoring-frontend
+    spec:
+      containers:
+        - name: frontend
+          # Replace with the ECR URI printed by `terraform output frontend_image`.
+          image: REPLACE_WITH_FRONTEND_ECR_URI:latest
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 80
+          readinessProbe:
+            httpGet:
+              path: /index.html
+              port: http
+            initialDelaySeconds: 3
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /index.html
+              port: http
+            initialDelaySeconds: 20
+            periodSeconds: 30
+          resources:
+            requests:
+              cpu: 50m
+              memory: 64Mi
+            limits:
+              cpu: 200m
+              memory: 128Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: monitoring-frontend
+  namespace: apm
+  labels:
+    app: monitoring-frontend
+spec:
+  type: ClusterIP
+  selector:
+    app: monitoring-frontend
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+      protocol: TCP

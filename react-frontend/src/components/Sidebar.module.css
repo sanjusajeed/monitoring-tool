@@ -1,0 +1,142 @@
+/* ── Top navbar shell ───────────────────────────────────────────────────────── */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: 52px;
+  padding: 0 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #f1f5f9;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ── Three nav columns ──────────────────────────────────────────────────────── */
+.navLeft {
+  display: flex;
+  align-items: center;
+}
+
+.navCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+}
+
+/* ── Brand mark ─────────────────────────────────────────────────────────────── */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: #fff;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+/* ── Segmented pill group ───────────────────────────────────────────────────── */
+.pillGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: #f3f4f6;
+  border-radius: 999px;
+  padding: 3px;
+}
+
+/* Sliding white chip — absolutely positioned, transitions left/width on tab change */
+.pillIndicator {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.06);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Nav buttons ────────────────────────────────────────────────────────────── */
+.navBtn {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 14px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.18s;
+}
+
+.navBtn:hover {
+  color: #374151;
+}
+
+.navBtn.active {
+  color: #111827;
+  font-weight: 600;
+}
+
+.navBtn.active:hover {
+  color: #111827;
+}
+
+.navIcon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: currentColor;
+  opacity: 0.75;
+}
+
+.navBtn.active .navIcon {
+  opacity: 1;
+}
+
+.navLabel {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* ── Info button (user guide trigger) ───────────────────────────────────────── */
+.infoBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 6px;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #6b7280;
+  cursor: pointer;
+  transition: color 0.13s, background 0.13s, border-color 0.13s;
+}
+
+.infoBtn:hover {
+  color: #111827;
+  background: #f9fafb;
+  border-color: #d1d5db;
+}

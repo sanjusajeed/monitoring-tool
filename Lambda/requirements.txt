@@ -1,0 +1,4 @@
+opensearch-py
+pymongo
+pyyaml
+httpx

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620">
+  <rect width="760" height="620" fill="#fff"/>
+  <text x="20" y="48" font-family="Arial" font-size="22" font-weight="700" fill="#020617">Supplierportal <tspan fill="#6b7280">(prod)</tspan></text>
+  <line x1="0" y1="72" x2="760" y2="72" stroke="#e5e7eb"/>
+  <text x="36" y="104" font-family="Arial" font-size="15" font-weight="700" fill="#64748b">Summary</text><text x="128" y="104" font-family="Arial" font-size="15" font-weight="700" fill="#10b981">Evidence</text><line x1="118" y1="120" x2="210" y2="120" stroke="#10b981" stroke-width="2"/>
+  <text x="20" y="154" font-family="Arial" font-size="13" font-weight="700" fill="#6b7280">FAILURE BREAKDOWN</text>
+  <rect x="20" y="170" width="700" height="170" rx="10" fill="#fff" stroke="#e5e7eb"/>
+  <g font-family="Arial" font-size="15">
+    <text x="46" y="204" fill="#94a3b8" font-weight="700">1.</text><text x="88" y="204" font-family="Courier New">/</text><text x="690" y="204" text-anchor="end" fill="#ef4444" font-weight="700">1</text>
+    <text x="46" y="244" fill="#94a3b8" font-weight="700">2.</text><text x="88" y="244" font-family="Courier New">/localhost.key</text><text x="690" y="244" text-anchor="end" fill="#ef4444" font-weight="700">1</text>
+    <text x="46" y="284" fill="#94a3b8" font-weight="700">3.</text><text x="88" y="284" font-family="Courier New">/host.key</text><text x="690" y="284" text-anchor="end" fill="#ef4444" font-weight="700">1</text>
+    <text x="46" y="324" fill="#94a3b8" font-weight="700">4.</text><text x="88" y="324" font-family="Courier New">/www.key</text><text x="690" y="324" text-anchor="end" fill="#ef4444" font-weight="700">1</text>
+  </g>
+  <text x="20" y="380" font-family="Arial" font-size="13" font-weight="700" fill="#6b7280">REPRESENTATIVE LOGS</text>
+  <rect x="44" y="400" width="680" height="130" rx="10" fill="#0f172a"/>
+  <g font-family="Courier New" font-size="13" fill="#e5e7eb">
+    <text x="64" y="430">[16:21:21] GET /api/api  <tspan fill="#fde68a">404</tspan> · route_not_found · Supplierportal</text>
+    <text x="64" y="460">[16:21:20] GET /api/announcements  <tspan fill="#fde68a">404</tspan> · route_not_found · Supplierportal</text>
+    <text x="64" y="490">[16:11:33] GET /host.key  <tspan fill="#fde68a">404</tspan> · route_not_found · Supplierportal</text>
+  </g>
+  <text x="20" y="566" font-family="Arial" font-size="13" font-weight="700" fill="#6b7280">CORRELATED SIGNALS</text>
+  <text x="44" y="596" font-family="Arial" font-size="15" fill="#374151">Pod istio-ingress-7b8944ff5c-495vg · 20 errors / 0 5xx</text>
+</svg>

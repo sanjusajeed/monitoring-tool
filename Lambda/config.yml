@@ -1,0 +1,48 @@
+mongodb:
+  uri: "mongo"
+  database: "monitoring_db"
+
+# Jiffy credentials — same values stored in jiffy_integrations collection.
+# Used here so the Lambda function runs independently of the FastAPI backend.
+test:
+  url: "test"    
+  client_id: "test"
+  client_secret: "1234"
+
+opensearch:
+  host: "logging.live.com"          # e.g. search-xyz.us-east-1.es.amazonaws.com
+  port: 443
+  username: "readonly"
+  password: "1234"
+  use_ssl: true
+  verify_certs: true
+
+  # Covers daily-rotated Istio ingress indices: platform-istio-ingress-istio-proxy-YYYY.MM.DD
+  index_pattern: "platform-*"
+
+  # Maximum log entries fetched per application per query
+  max_logs_per_query: 1000
+
+  # Fields to retrieve — matched to the actual Istio ingress log schema.
+  source_fields:
+    - "@timestamp"
+    - "start_time"
+    - "response_code"
+    - "response_code_details"
+    - "response_flags"
+    - "duration"
+    - "bytes_received"
+    - "bytes_sent"
+    - "upstream_cluster"
+    - "authority"
+    - "path"
+    - "method"
+    - "protocol"
+    - "user_agent"
+    - "x_forwarded_for"
+    - "request_id"
+    - "downstream_remote_address"
+    - "downstream_local_address"
+    - "kubernetes.namespace_name"
+    - "kubernetes.pod_name"
+

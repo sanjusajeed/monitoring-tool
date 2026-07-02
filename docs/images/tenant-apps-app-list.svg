@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <rect width="1200" height="560" fill="#fff"/>
+  <rect x="4" y="0" width="1172" height="142" rx="14" fill="#ecfdf5" stroke="#bbf7d0"/>
+  <rect x="28" y="14" width="36" height="36" rx="10" fill="#fff"/><text x="39" y="38" font-family="Arial" font-size="18" fill="#10b981">⬡</text>
+  <text x="84" y="34" font-family="Arial" font-size="28" font-weight="700" fill="#020617">4</text>
+  <text x="120" y="34" font-family="Arial" font-size="14" fill="#475569">Applications</text>
+  <text x="230" y="34" font-family="Arial" font-size="28" font-weight="700" fill="#020617">0.00%</text>
+  <text x="322" y="34" font-family="Arial" font-size="14" fill="#475569">Avg error rate</text>
+  <rect x="28" y="62" width="118" height="24" rx="12" fill="#10b981"/><text x="38" y="78" font-family="Arial" font-size="13" font-weight="700" fill="#fff">Based on insights</text>
+  <rect x="28" y="100" width="360" height="54" rx="10" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="46" y="114" width="34" height="34" rx="9" fill="#ecfdf5"/><circle cx="63" cy="131" r="4" fill="#10b981"/>
+  <text x="98" y="134" font-family="Arial" font-size="24" font-weight="700" fill="#020617">4</text><text x="98" y="152" font-family="Arial" font-size="13" fill="#64748b">Healthy</text>
+  <rect x="400" y="100" width="360" height="54" rx="10" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="418" y="114" width="34" height="34" rx="9" fill="#fffbeb"/><circle cx="435" cy="131" r="4" fill="#f59e0b"/>
+  <text x="470" y="134" font-family="Arial" font-size="24" font-weight="700" fill="#020617">0</text><text x="470" y="152" font-family="Arial" font-size="13" fill="#64748b">Warning</text>
+  <rect x="772" y="100" width="360" height="54" rx="10" fill="#fff" stroke="#e5e7eb"/>
+  <rect x="790" y="114" width="34" height="34" rx="9" fill="#fef2f2"/><circle cx="807" cy="131" r="4" fill="#ef4444"/>
+  <text x="842" y="134" font-family="Arial" font-size="24" font-weight="700" fill="#020617">0</text><text x="842" y="152" font-family="Arial" font-size="13" fill="#64748b">Critical</text>
+  <rect x="4" y="170" width="286" height="62" rx="12" fill="#fff" stroke="#e5e7eb"/>
+  <text x="54" y="202" font-family="Arial" font-size="24" font-weight="700" fill="#020617">18</text><text x="54" y="222" font-family="Arial" font-size="13" fill="#64748b">Total requests</text>
+  <rect x="300" y="170" width="286" height="62" rx="12" fill="#fff" stroke="#e5e7eb"/>
+  <text x="352" y="202" font-family="Arial" font-size="24" font-weight="700" fill="#020617">0.00%</text><text x="352" y="222" font-family="Arial" font-size="13" fill="#64748b">Avg error rate</text>
+  <rect x="596" y="170" width="286" height="62" rx="12" fill="#fff" stroke="#e5e7eb"/>
+  <text x="648" y="202" font-family="Arial" font-size="24" font-weight="700" fill="#020617">—</text><text x="648" y="222" font-family="Arial" font-size="13" fill="#64748b">Max P95 latency</text>
+  <rect x="892" y="170" width="286" height="62" rx="12" fill="#fff" stroke="#e5e7eb"/>
+  <text x="944" y="202" font-family="Arial" font-size="24" font-weight="700" fill="#020617">95</text><text x="944" y="222" font-family="Arial" font-size="13" fill="#64748b">Health score</text>
+  <text x="14" y="270" font-family="Arial" font-size="15" font-weight="700" fill="#10b981">All</text><text x="40" y="270" font-family="Arial" font-size="12" font-weight="700" fill="#10b981">4</text>
+  <text x="90" y="270" font-family="Arial" font-size="15" font-weight="700" fill="#64748b">Healthy</text><text x="142" y="270" font-family="Arial" font-size="12" fill="#94a3b8">4</text>
+  <text x="196" y="270" font-family="Arial" font-size="15" font-weight="700" fill="#64748b">Warning</text><text x="260" y="270" font-family="Arial" font-size="12" fill="#94a3b8">0</text>
+  <text x="318" y="270" font-family="Arial" font-size="15" font-weight="700" fill="#64748b">Critical</text><text x="372" y="270" font-family="Arial" font-size="12" fill="#94a3b8">0</text>
+  <line x1="4" y1="286" x2="1176" y2="286" stroke="#e5e7eb"/>
+  <g font-family="Arial">
+    <rect x="4" y="304" width="286" height="190" rx="12" fill="#fff" stroke="#e5e7eb"/>
+    <rect x="24" y="326" width="72" height="24" rx="12" fill="#ecfdf5" stroke="#86efac"/><text x="38" y="343" font-size="13" font-weight="700" fill="#10b981">● Healthy</text>
+    <rect x="24" y="372" width="40" height="40" rx="10" fill="#10b981"/><text x="32" y="398" font-size="16" font-weight="700" fill="#fff">AO</text>
+    <text x="76" y="390" font-size="16" font-weight="700" fill="#020617">Account Onboarding</text><text x="76" y="408" font-size="13" fill="#94a3b8">Analyzed 2d ago</text>
+    <circle cx="248" cy="390" r="26" fill="none" stroke="#10b981" stroke-width="5"/><text x="237" y="392" font-size="14" font-weight="700" fill="#10b981">95%</text><text x="236" y="408" font-size="9" fill="#94a3b8">Healthy</text>
+    <text x="26" y="450" font-size="14" fill="#64748b">Total Requests</text><text x="264" y="450" font-size="14" font-weight="700" fill="#020617">3</text>
+    <text x="26" y="470" font-size="14" fill="#64748b">Error Rate</text><text x="260" y="470" font-size="14" font-weight="700" fill="#020617">0%</text>
+    <text x="26" y="490" font-size="14" fill="#64748b">P95 Latency</text><text x="264" y="490" font-size="14" font-weight="700" fill="#020617">—</text>
+    <rect x="26" y="500" width="40" height="18" rx="9" fill="#ede9fe"/><text x="34" y="514" font-size="12" font-weight="700" fill="#7c3aed">Prod</text><text x="220" y="514" font-size="12" fill="#94a3b8">1 instance</text>
+    <text x="26" y="536" font-size="13" fill="#94a3b8">Analyzed </text><text x="78" y="536" font-size="13" font-weight="700" fill="#334155">2d ago</text><text x="210" y="536" font-size="13" font-weight="700" fill="#10b981">View details ›</text>
+    <rect x="300" y="304" width="286" height="190" rx="12" fill="#fff" stroke="#e5e7eb"/>
+    <rect x="320" y="326" width="72" height="24" rx="12" fill="#ecfdf5" stroke="#86efac"/><text x="334" y="343" font-size="13" font-weight="700" fill="#10b981">● Healthy</text>
+    <rect x="320" y="372" width="40" height="40" rx="10" fill="#f59e0b"/><text x="328" y="398" font-size="16" font-weight="700" fill="#fff">AS</text>
+    <text x="372" y="390" font-size="16" font-weight="700" fill="#020617">Account Servicing</text><text x="372" y="408" font-size="13" fill="#94a3b8">Analyzed 26d ago</text>
+    <circle cx="544" cy="390" r="26" fill="none" stroke="#10b981" stroke-width="5"/><text x="533" y="392" font-size="14" font-weight="700" fill="#10b981">95%</text>
+    <text x="322" y="450" font-size="14" fill="#64748b">Total Requests</text><text x="560" y="450" font-size="14" font-weight="700" fill="#020617">6</text>
+    <text x="322" y="470" font-size="14" fill="#64748b">Error Rate</text><text x="556" y="470" font-size="14" font-weight="700" fill="#020617">0%</text>
+    <text x="506" y="536" font-size="13" font-weight="700" fill="#10b981">View details ›</text>
+    <rect x="596" y="304" width="286" height="190" rx="12" fill="#fff" stroke="#e5e7eb"/>
+    <rect x="616" y="326" width="72" height="24" rx="12" fill="#ecfdf5" stroke="#86efac"/><text x="630" y="343" font-size="13" font-weight="700" fill="#10b981">● Healthy</text>
+    <rect x="616" y="372" width="40" height="40" rx="10" fill="#f59e0b"/><text x="624" y="398" font-size="16" font-weight="700" fill="#fff">DP</text>
+    <text x="668" y="390" font-size="16" font-weight="700" fill="#020617">Data Processing</text><text x="668" y="408" font-size="13" fill="#94a3b8">Analyzed Today</text>
+    <circle cx="840" cy="390" r="26" fill="none" stroke="#10b981" stroke-width="5"/><text x="829" y="392" font-size="14" font-weight="700" fill="#10b981">95%</text>
+    <text x="618" y="450" font-size="14" fill="#64748b">Total Requests</text><text x="856" y="450" font-size="14" font-weight="700" fill="#020617">1</text>
+    <text x="802" y="536" font-size="13" font-weight="700" fill="#10b981">View details ›</text>
+    <rect x="892" y="304" width="286" height="190" rx="12" fill="#fff" stroke="#e5e7eb"/>
+    <rect x="912" y="326" width="72" height="24" rx="12" fill="#ecfdf5" stroke="#86efac"/><text x="926" y="343" font-size="13" font-weight="700" fill="#10b981">● Healthy</text>
+    <rect x="912" y="372" width="40" height="40" rx="10" fill="#ec4899"/><text x="928" y="398" font-size="16" font-weight="700" fill="#fff">W</text>
+    <text x="964" y="390" font-size="16" font-weight="700" fill="#020617">Workstation</text><text x="964" y="408" font-size="13" fill="#94a3b8">Analyzed Today</text>
+    <circle cx="1136" cy="390" r="26" fill="none" stroke="#10b981" stroke-width="5"/><text x="1125" y="392" font-size="14" font-weight="700" fill="#10b981">95%</text>
+    <text x="914" y="450" font-size="14" fill="#64748b">Total Requests</text><text x="1152" y="450" font-size="14" font-weight="700" fill="#020617">8</text>
+    <text x="1098" y="536" font-size="13" font-weight="700" fill="#10b981">View details ›</text>
+  </g>
+</svg>

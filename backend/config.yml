@@ -1,0 +1,18 @@
+mongodb:
+  uri: "mongodb://localhost:27017"
+  database: "monitoring_db"
+
+opensearch:
+  host: "https://opensearch.example.com"
+  port: 443
+  username: "REPLACE_ME"
+  password: "REPLACE_ME"
+  use_ssl: true
+  verify_certs: true
+  index_pattern: "platform-*"
+
+anthropic:
+  api_key: "REPLACE_ME"
+
+# Base URL for the monitoring app (used to build the Teams "Investigate" button link).
+app_base_url: "http://localhost:8000"

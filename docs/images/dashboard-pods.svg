@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460">
+  <rect width="1200" height="460" fill="#fff"/>
+  <g font-family="Arial">
+    <rect x="20" y="20" width="560" height="410" rx="12" fill="#fff" stroke="#e5e7eb"/><text x="70" y="58" font-size="18" font-weight="700">Top Failing Pods</text>
+    <text x="52" y="106" font-family="Courier New" font-size="15" font-weight="700">istio-ingress-7b8944ff5c-p9k9z</text><text x="52" y="126" font-size="13" fill="#64748b">ns: istio-ingress · 389 req · serves 15 apps</text><text x="540" y="112" text-anchor="end" font-size="18" font-weight="700" fill="#ef4444">27</text><text x="540" y="130" text-anchor="end" font-size="12" fill="#64748b">6.94% · 20 5xx</text>
+    <text x="52" y="166" font-family="Courier New" font-size="15" font-weight="700">istio-ingress-7b8944ff5c-h8xcb</text><text x="52" y="186" font-size="13" fill="#64748b">ns: istio-ingress · 389 req · serves 16 apps</text><text x="540" y="172" text-anchor="end" font-size="18" font-weight="700" fill="#ef4444">26</text>
+    <text x="52" y="226" font-family="Courier New" font-size="15" font-weight="700">workhorse-7cd9d4bb7f-xj7mk</text><text x="52" y="246" font-size="13" fill="#64748b">ns: live · 201 req · serves 11 apps</text><text x="540" y="232" text-anchor="end" font-size="18" font-weight="700" fill="#ef4444">22</text>
+    <rect x="620" y="20" width="560" height="410" rx="12" fill="#fff" stroke="#e5e7eb"/><text x="670" y="58" font-size="18" font-weight="700">Slowest Pods (P95)</text>
+    <text x="652" y="106" font-family="Courier New" font-size="15" font-weight="700">istio-ingress-7b8944ff5c-h8xcb</text><text x="652" y="126" font-size="13" fill="#64748b">ns: istio-ingress · 389 req · serves 16 apps</text><text x="1140" y="112" text-anchor="end" font-size="18" font-weight="700" fill="#2563eb">7h 41m</text><text x="1140" y="130" text-anchor="end" font-size="12" fill="#64748b">avg 9.40s</text>
+    <text x="652" y="166" font-family="Courier New" font-size="15" font-weight="700">workhorse-messenger-64b78b749-bpk6q</text><text x="652" y="186" font-size="13" fill="#64748b">ns: live · 35 req · serves 18 apps</text><text x="1140" y="172" text-anchor="end" font-size="18" font-weight="700" fill="#2563eb">7h 41m</text>
+    <text x="652" y="226" font-family="Courier New" font-size="15" font-weight="700">istio-ingress-7b8944ff5c-p9k9z</text><text x="652" y="246" font-size="13" fill="#64748b">ns: istio-ingress · 389 req · serves 15 apps</text><text x="1140" y="232" text-anchor="end" font-size="18" font-weight="700" fill="#2563eb">1h 30m</text>
+  </g>
+</svg>

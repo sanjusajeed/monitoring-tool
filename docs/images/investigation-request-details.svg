@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="520" viewBox="0 0 430 520">
+  <rect width="430" height="520" fill="#fff"/>
+  <text x="20" y="34" font-family="Arial" font-size="11" font-weight="700" fill="#92400e">REQUEST</text>
+  <rect x="310" y="16" width="100" height="28" rx="6" fill="#111827"/><text x="330" y="35" font-family="Arial" font-size="13" font-weight="700" fill="#fff">Copy cURL</text>
+  <rect x="20" y="58" width="390" height="30" rx="6" fill="#f8fafc" stroke="#e5e7eb"/>
+  <rect x="20" y="58" width="64" height="30" rx="6" fill="#dbeafe"/><text x="34" y="78" font-family="Arial" font-size="13" font-weight="700" fill="#1d4ed8">POST</text>
+  <text x="96" y="78" font-family="Courier New" font-size="12">https://newui-paidloan.alerusapps.live.jiffy...</text>
+  <text x="20" y="116" font-family="Arial" font-size="11" font-weight="700" fill="#92400e">HEADERS</text>
+  <rect x="20" y="132" width="390" height="150" rx="6" fill="#fffbeb" stroke="#facc15"/>
+  <g font-family="Arial" font-size="12">
+    <text x="32" y="154" font-weight="700" fill="#92400e">Content-Type</text><text x="150" y="154" font-family="Courier New">application/json</text>
+    <text x="32" y="181" font-weight="700" fill="#92400e">Authorization</text><text x="150" y="181" font-family="Courier New">Bearer &lt;token&gt;</text>
+    <text x="32" y="208" font-weight="700" fill="#92400e">Origin</text><text x="150" y="208" font-family="Courier New">https://newui-paidloan.alerusapps.live...</text>
+    <text x="32" y="235" font-weight="700" fill="#92400e">User-Agent</text><text x="150" y="235" font-family="Courier New">Mozilla/5.0 Chrome/147.0.0.0</text>
+    <text x="32" y="262" font-weight="700" fill="#92400e">Accept</text><text x="150" y="262" font-family="Courier New">application/json, text/plain, */*</text>
+  </g>
+  <text x="20" y="316" font-family="Arial" font-size="11" font-weight="700" fill="#92400e">BODY / PARAMS</text>
+  <rect x="20" y="332" width="390" height="165" rx="6" fill="#fffbeb" stroke="#facc15"/>
+  <g font-family="Arial" font-size="12">
+    <text x="32" y="354" font-weight="700" fill="#047857">_fields</text><text x="150" y="354" font-family="Courier New">id</text>
+    <text x="32" y="381" font-weight="700" fill="#047857">sys.genAppHost</text><text x="150" y="381" font-family="Courier New">http://app-data-manager:8002</text>
+    <text x="32" y="408" font-weight="700" fill="#047857">sys.platformUrl</text><text x="150" y="408" font-family="Courier New">https://live.jiffy.ai</text>
+    <text x="32" y="435" font-weight="700" fill="#047857">sys.workflowHash</text><text x="150" y="435" font-family="Courier New">4208fde0703ae8e24a4a...</text>
+    <text x="32" y="462" font-weight="700" fill="#047857">sys.workflowVersion</text><text x="150" y="462" font-family="Courier New">1.0.0</text>
+  </g>
+</svg>

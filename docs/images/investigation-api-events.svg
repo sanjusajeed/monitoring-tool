@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <rect width="1200" height="420" fill="#fff"/>
+  <rect x="18" y="16" width="300" height="120" fill="#bae6fd"/>
+  <text x="38" y="50" font-family="Arial" font-size="12" font-weight="700" fill="#64748b">API PATHS</text>
+  <text x="38" y="86" font-family="Arial" font-size="28" font-weight="700" fill="#075985">5</text>
+  <rect x="340" y="30" width="820" height="18" fill="#fca5a5"/><text x="352" y="44" font-family="Arial" font-size="11" font-weight="700" fill="#fff">POST</text><text x="390" y="44" font-family="Courier New" font-size="13">/proxy/api/external/jiffy-p1/Alerus</text><text x="1080" y="44" font-family="Arial" font-size="11" fill="#7f1d1d">post_documents</text>
+  <rect x="340" y="54" width="820" height="18" fill="#f8fafc"/><text x="352" y="68" font-family="Arial" font-size="11" font-weight="700" fill="#fff">POST</text><rect x="348" y="56" width="32" height="14" fill="#0369a1"/><text x="390" y="68" font-family="Courier New" font-size="13">/proxy/api/external/jiffy-p1/Alerus</text>
+  <rect x="340" y="78" width="820" height="18" fill="#f8fafc"/><rect x="348" y="80" width="32" height="14" fill="#0369a1"/><text x="352" y="92" font-family="Arial" font-size="11" font-weight="700" fill="#fff">POST</text><text x="390" y="92" font-family="Courier New" font-size="13">/ngdvt/v1/transformer/transform/couvomgosui1gc4lme8g</text>
+  <rect x="18" y="156" width="300" height="235" fill="#64748b"/>
+  <text x="38" y="190" font-family="Arial" font-size="12" font-weight="700" fill="#cbd5e1">TEMPORAL</text><text x="38" y="208" font-family="Arial" font-size="12" font-weight="700" fill="#cbd5e1">EVENTS</text>
+  <text x="38" y="250" font-family="Arial" font-size="28" font-weight="700" fill="#fff">17</text>
+  <rect x="320" y="156" width="820" height="235" fill="#fff"/>
+  <rect x="320" y="156" width="820" height="28" fill="#f1f5f9"/>
+  <text x="332" y="176" font-family="Arial" font-size="12" font-weight="700" fill="#64748b">#</text><text x="382" y="176" font-family="Arial" font-size="12" font-weight="700" fill="#64748b">EVENT TYPE</text><text x="620" y="176" font-family="Arial" font-size="12" font-weight="700" fill="#64748b">TIME</text><text x="790" y="176" font-family="Arial" font-size="12" font-weight="700" fill="#64748b">DETAILS</text>
+  <g font-family="Arial" font-size="12" fill="#334155">
+    <text x="332" y="206">1</text><text x="382" y="206" font-family="Courier New">WORKFLOW_EXECUTION_STARTED</text><text x="620" y="206">5/6/2026, 9:39:21 AM</text><text x="790" y="206">JIFFY_TASK_QUEUE</text>
+    <text x="332" y="234">2</text><text x="382" y="234" font-family="Courier New">WORKFLOW_TASK_SCHEDULED</text><text x="620" y="234">5/6/2026, 9:39:21 AM</text><text x="790" y="234">JIFFY_TASK_QUEUE</text>
+    <text x="332" y="262">3</text><text x="382" y="262" font-family="Courier New">WORKFLOW_TASK_STARTED</text><text x="620" y="262">5/6/2026, 9:39:21 AM</text><text x="790" y="262">{ scheduledEventId: 2, identity: ... }</text>
+    <text x="332" y="290">5</text><text x="382" y="290" font-family="Courier New">ACTIVITY_TASK_SCHEDULED</text><text x="620" y="290">5/6/2026, 9:39:21 AM</text><text x="790" y="290">fetchDSLBYStepName</text>
+  </g>
+  <rect x="1160" y="156" width="32" height="235" fill="#6366f1"/><text x="1178" y="280" font-family="Arial" font-size="12" font-weight="700" fill="#fff" transform="rotate(90 1178 280)">VISUALIZE</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120">
+  <rect width="1200" height="120" fill="#fff"/>
+  <rect x="18" y="16" width="300" height="84" fill="#fef3c7"/>
+  <text x="38" y="48" font-family="Arial" font-size="12" font-weight="700" fill="#92400e">HOW DID</text>
+  <text x="38" y="64" font-family="Arial" font-size="12" font-weight="700" fill="#92400e">YOU FIX?</text>
+  <circle cx="104" cy="47" r="8" fill="#92400e"/><text x="101" y="51" font-family="Arial" font-size="10" fill="#fff">i</text>
+  <rect x="340" y="30" width="730" height="52" rx="6" fill="#fff" stroke="#cbd5e1"/>
+  <text x="354" y="60" font-family="Arial" font-size="14" fill="#64748b">Describe how you resolved this issue...</text>
+  <rect x="1080" y="36" width="82" height="40" fill="#e2e8f0"/>
+  <text x="1103" y="61" font-family="Arial" font-size="14" font-weight="700" fill="#94a3b8">Submit</text>
+</svg>

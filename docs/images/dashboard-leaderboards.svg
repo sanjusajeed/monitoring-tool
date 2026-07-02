@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <rect width="1200" height="500" fill="#fff"/>
+  <g font-family="Arial">
+    <rect x="20" y="20" width="560" height="220" rx="12" fill="#fff" stroke="#e5e7eb"/><text x="70" y="58" font-size="18" font-weight="700">Largest Workflow Failures</text>
+    <text x="52" y="98" font-size="16" font-weight="700">Reconciliation</text><text x="52" y="118" font-size="13" fill="#64748b">choiceproperties · Production</text><text x="540" y="104" text-anchor="end" font-size="18" font-weight="700" fill="#ef4444">88</text><text x="540" y="122" text-anchor="end" font-size="12" fill="#64748b">of 564 · 15.60%</text>
+    <text x="52" y="154" font-size="16" font-weight="700">eClose</text><text x="52" y="174" font-size="13" fill="#64748b">mundipharma · Production</text><text x="540" y="160" text-anchor="end" font-size="18" font-weight="700" fill="#ef4444">46</text>
+    <text x="52" y="210" font-size="16" font-weight="700">Ticket Management</text><text x="52" y="230" font-size="13" fill="#64748b">nexeoplastics · Production</text><text x="540" y="216" text-anchor="end" font-size="18" font-weight="700" fill="#ef4444">10</text>
+    <rect x="620" y="20" width="560" height="220" rx="12" fill="#fff" stroke="#e5e7eb"/><text x="670" y="58" font-size="18" font-weight="700">Largest API Failures</text>
+    <text x="652" y="98" font-size="16" font-weight="700">AP</text><text x="652" y="118" font-size="13" fill="#64748b">rehlko · Production</text><text x="1140" y="104" text-anchor="end" font-size="18" font-weight="700" fill="#f97316">62</text><text x="1140" y="122" text-anchor="end" font-size="12" fill="#64748b">of 782 · 7.93%</text>
+    <text x="652" y="154" font-size="16" font-weight="700">Ticket Management</text><text x="652" y="174" font-size="13" fill="#64748b">rehlko · Production</text><text x="1140" y="160" text-anchor="end" font-size="18" font-weight="700" fill="#f97316">60</text>
+    <text x="652" y="210" font-size="16" font-weight="700">Account Onboarding</text><text x="652" y="230" font-size="13" fill="#64748b">citizenswealth · Production</text><text x="1140" y="216" text-anchor="end" font-size="18" font-weight="700" fill="#f97316">36</text>
+    <rect x="20" y="260" width="560" height="220" rx="12" fill="#fff" stroke="#e5e7eb"/><text x="70" y="298" font-size="18" font-weight="700">Highest P95 Latency</text>
+    <text x="52" y="338" font-size="16" font-weight="700">eClose</text><text x="52" y="358" font-size="13" fill="#64748b">choiceproperties · Production</text><text x="540" y="344" text-anchor="end" font-size="18" font-weight="700" fill="#2563eb">7h 41m</text><text x="540" y="362" text-anchor="end" font-size="12" fill="#64748b">avg 7h 41m</text>
+    <text x="52" y="398" font-size="16" font-weight="700">Workstation</text><text x="52" y="418" font-size="13" fill="#64748b">diversify-prod · Production</text><text x="540" y="404" text-anchor="end" font-size="18" font-weight="700" fill="#2563eb">1h 1m</text>
+    <rect x="620" y="260" width="560" height="220" rx="12" fill="#fff" stroke="#e5e7eb"/><text x="670" y="298" font-size="18" font-weight="700">Highest Error Rate</text>
+    <text x="652" y="338" font-size="16" font-weight="700">Account Onboarding</text><text x="652" y="358" font-size="13" fill="#64748b">citizenswealth · Production</text><text x="1140" y="344" text-anchor="end" font-size="18" font-weight="700" fill="#d97706">13.19%</text><text x="1140" y="362" text-anchor="end" font-size="12" fill="#64748b">38 / 288</text>
+    <text x="652" y="398" font-size="16" font-weight="700">Reconciliation</text><text x="652" y="418" font-size="13" fill="#64748b">choiceproperties · Production</text><text x="1140" y="404" text-anchor="end" font-size="18" font-weight="700" fill="#d97706">9.98%</text>
+  </g>
+</svg>
